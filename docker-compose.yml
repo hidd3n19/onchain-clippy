@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  helios:
+    build: .
+    image: helios:latest
+    platform: linux/amd64
+    ports:
+      - "8545:8545"
+      - "8080:80"
+    volumes:
+      - /var/run/tappd.sock:/var/run/tappd.sock
+    restart: always
