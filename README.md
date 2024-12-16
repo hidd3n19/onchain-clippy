@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Twitter Follow](https://img.shields.io/twitter/follow/FUCORY?style=social)](https://twitter.com/FUCORY)
 
-![Onchain Clippy](./assets/clippy.png)
+![image](https://github.com/user-attachments/assets/532f6e93-e75e-45f6-abea-d5be77cab802)
 
 ## 🌟 What is this chaos?
 
