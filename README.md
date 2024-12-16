@@ -88,6 +88,34 @@ While Clippy has grown since the old days working in corporate America, he remai
 
 ![image](https://github.com/user-attachments/assets/532f6e93-e75e-45f6-abea-d5be77cab802)
 
+## 👩‍💻 Contributing Guidelines
+
+To maintain order in the chaos and ensure fair bounty distribution:
+
+1. **Issue Assignment**: 
+   - Contributors MUST be assigned to an issue before submitting PRs for bounty-eligible work
+   - Comment on the issue you want to work on and wait for assignment
+   - Unassigned PRs will not be eligible for bounty rewards
+
+2. **SNS Requirement**:
+   - All contributions must include your SNS address for token distribution
+   - Add your SNS to your PR description: `SNS: your-name.eth`
+   - No SNS = No tokens (but we still love you!)
+   - If you provide a regular solana address we will likely angerly still gift
+
+3. **PR Process**:
+   - Reference the issue number in your PR: `Fixes #123`
+   - Include a brief description of your changes
+   - Add tests if applicable
+   - Keep PRs focused and atomic
+
+4. **Code Style**:
+   - Follow existing code formatting
+   - Add comments for complex logic
+   - Keep Clippy happy (he's seen some things)
+
+Remember: Quality > Quantity. We're building something special here! 🚀
+
 ## 📄 License
 
 MIT License - Because sharing is caring (and legally required)
@@ -97,9 +125,8 @@ MIT License - Because sharing is caring (and legally required)
 - [@hashwarlock](https://twitter.com/hashwarlock) for being crazy enough to test this
 - [@socrates1024](https://twitter.com/socrates1024) for the specs reality check
 - [@shawmakesmagic](https://twitter.com/shawmakesmagic) for the vibes
+- Coffee ☕ and Newport Menthols for getting Clippy through the bear market 🚬
 - The Ethereum community for putting up with us
-- Newport Menthols for getting Clippy through the bear market 🚬
-- Coffee ☕️
 
 ---
 <p align="center">Built with 🦝 chaos energy and ❤️</p>
