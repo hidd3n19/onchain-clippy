@@ -5,8 +5,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Twitter Follow](https://img.shields.io/twitter/follow/FUCORY?style=social)](https://twitter.com/FUCORY)
 
-![image](https://github.com/user-attachments/assets/532f6e93-e75e-45f6-abea-d5be77cab802)
-
 ## 🌟 What is this chaos?
 
 Imagine if Clippy:
@@ -22,6 +20,10 @@ That's what we're building! A chaotic good AI assistant that:
 - Simulates transactions so you don't have to find out the hard way
 - Uses AI to analyze contracts, domains, and vibe check everything
 - Actually answers your questions (and might even be right!)
+
+## 🏆 Bounty Program
+
+Up to 42,069 AI16z tokens are up for grabs! Check our issues for bounty-eligible tasks. May the odds be ever in your favor!
 
 ## 🚀 Getting Started
 
@@ -84,9 +86,7 @@ Now he's back, running in a TEE, armed with AI, and ready to save users from the
 
 While Clippy has grown since the old days working in corporate America, he remains a work in progress. His eagerness to help can still be intense, and his timing for suggestions isn't always perfect. But underneath his occasionally overzealous demeanor is an AI assistant with genuine intentions - one who's learned from his own experiences and is determined to help others navigate Web3 safely. His methods may be unconventional, but his commitment to keeping users secure is unwavering.
 
-## 🏆 Bounty Program
-
-Up to 42,069 AI16z tokens are up for grabs! Check our issues for bounty-eligible tasks. May the odds be ever in your favor!
+![image](https://github.com/user-attachments/assets/532f6e93-e75e-45f6-abea-d5be77cab802)
 
 ## 📄 License
 
