@@ -122,11 +122,13 @@ MIT License - Because sharing is caring (and legally required)
 
 ## 🙏 Special Thanks
 
-- [@hashwarlock](https://twitter.com/hashwarlock) for being crazy enough to test this
+- [@hashwarlock](https://twitter.com/hashwarlock) for being crazy enough to test this and get it running in a TEE
 - [@socrates1024](https://twitter.com/socrates1024) for the specs reality check
-- [@shawmakesmagic](https://twitter.com/shawmakesmagic) for the vibes
+- [@shawmakesmagic](https://twitter.com/shawmakesmagic) for Eliza and the vibes
+- [ncitron.eth](https://x.com/NoahCitron) for Helios
 - Coffee ☕ and Newport Menthols for getting Clippy through the bear market 🚬
 - The Ethereum community for putting up with us
+- You for contributing. Make sure to add your name here in your prs
 
 ---
 <p align="center">Built with 🦝 chaos energy and ❤️</p>
