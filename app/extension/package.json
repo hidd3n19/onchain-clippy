@@ -1,0 +1,19 @@
+{
+	"name": "@onchain-clippy/extension",
+	"version": "1.0.0",
+	"private": false,
+	"sideEffects": false,
+	"type": "module",
+
+	"scripts": {
+		"all": "pnpm i"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@onchain-clippy/light-client": "workspace:^",
+		"@onchain-clippy/tsconfig": "workspace:^",
+		"@onchain-clippy/tsupconfig": "workspace:^"
+	}
+}

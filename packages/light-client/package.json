@@ -1,0 +1,48 @@
+{
+	"name": "@onchain-clippy/light-client",
+	"version": "1.0.0",
+	"private": false,
+	"sideEffects": false,
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/evmts/onchain-clippy.git",
+		"directory": "core/light-client"
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"import": {
+				"types": "./types/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		}
+	},
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "types/index.d.ts",
+	"files": [
+		"dist",
+		"src",
+		"!src/**/*.spec.ts",
+		"types"
+	],
+	"scripts": {
+		"all": "pnpm i && bun run build && bun run generate:docs",
+		"build": "nx run-many --targets=build:dist,build:types --projects=@onchain-clippy/light-client",
+		"build:dist": "tsup",
+		"build:types": "tsup --dts-only && tsc --emitDeclarationOnly --declaration",
+		"generate:docs": "typedoc",
+		"clean": "rm -rf node_modules && rm -rf artifacts && rm -rf dist && rm -rf cache"
+	},
+	"keywords": [],
+	"license": "MIT",
+	"dependencies": {
+		"@onchain-clippy/tsconfig": "workspace:^",
+		"@onchain-clippy/tsupconfig": "workspace:^"
+	}
+}

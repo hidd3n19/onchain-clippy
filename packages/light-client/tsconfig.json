@@ -1,0 +1,10 @@
+{
+	"extends": "@onchain-clippy/tsconfig/base.json",
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "types",
+		"skipLibCheck": true,
+		"types": ["bun-types"]
+	},
+	"include": ["src"]
+}

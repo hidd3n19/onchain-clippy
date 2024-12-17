@@ -1,0 +1,9 @@
+{
+  "name": "@onchain-clippy/tsconfig",
+  "version": "1.0.0",
+  "private": false,
+  "sideEffects": false,
+  "files": [
+    "base.json"
+  ]
+}
