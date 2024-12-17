@@ -24,4 +24,4 @@ The url being used to connect to the remote Tevm backend
 
 ## Defined in
 
-LightClient.ts:1
+[LightClient.ts:1](https://github.com/s29papi/onchain-clippy/blob/main/packages/light-client/src/LightClient.ts#L1)

@@ -1,5 +1,5 @@
 {
-	"extends": "@onchain-clippy/tsconfig/base.json",
+	"extends": "@tevm/tsconfig/base.json",
 	"compilerOptions": {
 		"rootDir": "src",
 		"outDir": "types",

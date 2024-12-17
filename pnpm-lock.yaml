@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@tevm/tsconfig':
+        specifier: 1.0.0-next.117
+        version: 1.0.0-next.117
       bun-types:
         specifier: ^1.1.38
         version: 1.1.38
@@ -33,32 +36,21 @@ importers:
       '@onchain-clippy/light-client':
         specifier: workspace:^
         version: link:../../packages/light-client
-      '@onchain-clippy/tsconfig':
-        specifier: workspace:^
-        version: link:../../configs/tsconfig
-      '@onchain-clippy/tsupconfig':
-        specifier: workspace:^
-        version: link:../../configs/tsupconfig
-
-  configs/tsconfig: {}
-
-  configs/tsupconfig:
-    dependencies:
-      '@onchain-clippy/tsconfig':
-        specifier: workspace:^
-        version: link:../tsconfig
-      '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+      '@tevm/tsconfig':
+        specifier: 1.0.0-next.117
+        version: 1.0.0-next.117
+      '@tevm/tsupconfig':
+        specifier: 1.0.0-next.118
+        version: 1.0.0-next.118
 
   packages/light-client:
-    dependencies:
-      '@onchain-clippy/tsconfig':
-        specifier: workspace:^
-        version: link:../../configs/tsconfig
-      '@onchain-clippy/tsupconfig':
-        specifier: workspace:^
-        version: link:../../configs/tsupconfig
+    devDependencies:
+      '@tevm/tsconfig':
+        specifier: 1.0.0-next.117
+        version: 1.0.0-next.117
+      '@tevm/tsupconfig':
+        specifier: 1.0.0-next.118
+        version: 1.0.0-next.118
 
 packages:
 
@@ -417,6 +409,12 @@ packages:
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
+
+  '@tevm/tsconfig@1.0.0-next.117':
+    resolution: {integrity: sha512-83pIr+KoZPjKon/WWgwKvWYY6EGdbIPseq6UDZFhMMEddR3/tlCIuZGigPkJR/DsN8r2brBBmn+TqJ1SEtnOag==}
+
+  '@tevm/tsupconfig@1.0.0-next.118':
+    resolution: {integrity: sha512-QeC4GUzp4X4Xup2rubqOjTAKj2sCCDrd8t5JJpfs+wCSoANbg2FOnjOVuSOy7Yl8ApbELu+a4LXyLrv56u1nJA==}
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -1367,6 +1365,13 @@ snapshots:
   '@shikijs/vscode-textmate@9.3.1': {}
 
   '@sinclair/typebox@0.27.8': {}
+
+  '@tevm/tsconfig@1.0.0-next.117': {}
+
+  '@tevm/tsupconfig@1.0.0-next.118':
+    dependencies:
+      '@tevm/tsconfig': 1.0.0-next.117
+      '@types/node': 22.10.2
 
   '@tybys/wasm-util@0.9.0':
     dependencies:

@@ -41,8 +41,8 @@
 	},
 	"keywords": [],
 	"license": "MIT",
-	"dependencies": {
-		"@onchain-clippy/tsconfig": "workspace:^",
-		"@onchain-clippy/tsupconfig": "workspace:^"
+	"devDependencies": {
+		"@tevm/tsconfig": "1.0.0-next.117",
+		"@tevm/tsupconfig": "1.0.0-next.118"
 	}
 }

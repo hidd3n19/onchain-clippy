@@ -7,13 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
-    "packages/*",
-    "configs/*"
+    "packages/*"
   ],
   "devDependencies": {
     "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@tevm/tsconfig": "1.0.0-next.117",
     "bun-types": "^1.1.38",
     "nx": "^20.2.2",
     "tsup": "^8.3.5",

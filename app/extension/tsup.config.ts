@@ -1,2 +1,2 @@
-import { js } from '@onchain-clippy/tsupconfig'
+import { js } from '@tevm/tsupconfig';
 export default js
