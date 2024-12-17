@@ -40,9 +40,5 @@
 		"clean": "rm -rf node_modules && rm -rf artifacts && rm -rf dist && rm -rf cache"
 	},
 	"keywords": [],
-	"license": "MIT",
-	"devDependencies": {
-		"@tevm/tsconfig": "1.0.0-next.117",
-		"@tevm/tsupconfig": "1.0.0-next.118"
-	}
+	"license": "MIT"
 }

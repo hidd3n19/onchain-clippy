@@ -11,8 +11,6 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"@onchain-clippy/light-client": "workspace:^",
-		"@tevm/tsconfig": "1.0.0-next.117",
-		"@tevm/tsupconfig": "1.0.0-next.118"
+		"@onchain-clippy/light-client": "workspace:^"
 	}
 }

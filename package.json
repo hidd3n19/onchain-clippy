@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@tevm/tsconfig": "1.0.0-next.117",
+    "@tevm/tsupconfig": "1.0.0-next.118",
     "bun-types": "^1.1.38",
     "nx": "^20.2.2",
     "tsup": "^8.3.5",

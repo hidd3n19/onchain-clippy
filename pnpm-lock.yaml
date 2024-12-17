@@ -11,6 +11,9 @@ importers:
       '@tevm/tsconfig':
         specifier: 1.0.0-next.117
         version: 1.0.0-next.117
+      '@tevm/tsupconfig':
+        specifier: 1.0.0-next.118
+        version: 1.0.0-next.118
       bun-types:
         specifier: ^1.1.38
         version: 1.1.38
@@ -36,21 +39,8 @@ importers:
       '@onchain-clippy/light-client':
         specifier: workspace:^
         version: link:../../packages/light-client
-      '@tevm/tsconfig':
-        specifier: 1.0.0-next.117
-        version: 1.0.0-next.117
-      '@tevm/tsupconfig':
-        specifier: 1.0.0-next.118
-        version: 1.0.0-next.118
 
-  packages/light-client:
-    devDependencies:
-      '@tevm/tsconfig':
-        specifier: 1.0.0-next.117
-        version: 1.0.0-next.117
-      '@tevm/tsupconfig':
-        specifier: 1.0.0-next.118
-        version: 1.0.0-next.118
+  packages/light-client: {}
 
 packages:
 
