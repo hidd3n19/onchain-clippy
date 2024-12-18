@@ -20,3 +20,26 @@ extra-experimental-features = nix-command flakes
 
 The Nix dev env can be activated automatically upon entering the project root directory.
 Follow this [docs page](https://nix.dev/guides/recipes/direnv#automatic-direnv) for the instructions.
+
+## Chrome Extension Development
+
+To develop the Chrome extension locally:
+
+1. Build the extension:
+```bash
+cd app/extension
+pnpm install
+pnpm build
+```
+
+2. Load the extension in Chrome:
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Enable "Developer mode" in the top right
+   - Click "Load unpacked" and select the `app/extension/dist` directory
+   - The extension icon should appear in your Chrome toolbar
+
+3. Development workflow:
+   - Make changes to files in `app/extension/src`
+   - Run `pnpm build` to rebuild
+   - Click the refresh icon on the extension card in `chrome://extensions/`
+   - Click the extension icon to see your changes
