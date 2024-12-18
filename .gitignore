@@ -1,3 +1,6 @@
+.nx
+
+# dependencies
 .vercel
 
 # dependencies 
@@ -5,6 +8,7 @@ node_modules
 
 dist
 
+types
 types
 
 .env
