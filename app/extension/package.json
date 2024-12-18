@@ -1,0 +1,16 @@
+{
+	"name": "@onchain-clippy/extension",
+	"version": "1.0.0",
+	"private": false,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"all": "pnpm i"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"@onchain-clippy/light-client": "workspace:^"
+	}
+}
