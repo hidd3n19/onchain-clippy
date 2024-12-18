@@ -1,16 +1,22 @@
 {
-	"name": "@onchain-clippy/extension",
-	"version": "1.0.0",
-	"private": false,
-	"sideEffects": false,
-	"type": "module",
-	"scripts": {
-		"all": "pnpm i"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "MIT",
-	"dependencies": {
-		"@onchain-clippy/light-client": "workspace:^"
-	}
+  "name": "@onchain-clippy/extension",
+  "version": "1.0.0",
+  "private": false,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "all": "pnpm i",
+    "build": "tsc && cp src/manifest.json src/popup.html src/icon48.png src/icon128.png dist/",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@onchain-clippy/light-client": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.260",
+    "typescript": "^5.3.3"
+  }
 }
