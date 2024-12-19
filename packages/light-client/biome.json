@@ -15,10 +15,8 @@
 			"**/types",
 			"**/lib",
 			"docs/**/*",
-			"bundler/**/*",
 			".vscode",
-			".changeset",
-			"cli"
+			".changeset"
 		]
 	},
 	"formatter": {
