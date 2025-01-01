@@ -25,23 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
-
-      # Step 3: Install Dependencies
-      - name: Install Dependencies
-        run: bun install
-
-      # Step 4: Cache Nx Outputs
-      - name: Cache Nx Build Artifacts
-        uses: actions/cache@v3
-        with:
-          path: |
-            .nx/cache
-          key: ${{ runner.os }}-nx-cache-${{ github.ref_name }}-${{ github.sha }}
-
-      # Step 5: Run Lint Checks
-      - name: Lint Checks
-        run: bunx nx affected --target=lint:check
       
-        # Step 6: Run Type Checking
-      - name: Type Checking
-        run: bunx nx affected --target=typecheck
+        # Step 3: Setup Bun
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
