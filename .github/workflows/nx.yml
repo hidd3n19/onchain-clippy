@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+env:
+  # Increase memory for Node.js
+  NODE_OPTIONS: "--max_old_space_size=4096"
+
+jobs:
+  build:
+    name: Nx CI Job
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      # Step 3: Install Dependencies
+      - name: Install Dependencies
+        run: bun install
+
+      # Step 4: Cache Nx Outputs
+      - name: Cache Nx Build Artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            .nx/cache
+          key: ${{ runner.os }}-nx-cache-${{ github.ref_name }}-${{ github.sha }}
+
+      # Step 5: Run Lint Checks
+      - name: Lint Checks
+        run: bunx nx affected --target=lint:check
