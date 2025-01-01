@@ -30,6 +30,10 @@ jobs:
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
       
-      # Step 4: Lint check
+      # Step 4: Install Packages
+      - name: Install Packages
+        run: bun install
+
+      # Step 5: Lint check
       - name: Lint check
         run: bun run lint:check
