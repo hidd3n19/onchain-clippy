@@ -30,10 +30,10 @@ jobs:
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
       
-      # Step 4: Install Packages
-      - name: Install Packages
-        run: bun install
+      # Step 4: Install Biome
+      - name: Install Biome
+        run: bun install @biomejs/biome
 
-      # Step 5: Lint check
-      - name: Lint check
+      # Step 5: Lint Check
+      - name: Lint Check
         run: bun run lint:check
