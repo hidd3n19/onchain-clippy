@@ -41,3 +41,7 @@ jobs:
       # Step 5: Run Lint Checks
       - name: Lint Checks
         run: bunx nx affected --target=lint:check
+      
+        # Step 6: Run Type Checking
+      - name: Type Checking
+        run: bunx nx affected --target=typecheck
