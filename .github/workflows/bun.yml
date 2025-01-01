@@ -37,3 +37,11 @@ jobs:
       # Step 5: Lint Check
       - name: Lint Check
         run: bun run lint:check
+      
+      # Step 6: Format Check
+      - name: Format Check
+        run: bun run format:check
+
+      # Step 7: Test
+      - name: Test
+        run: bun run test
