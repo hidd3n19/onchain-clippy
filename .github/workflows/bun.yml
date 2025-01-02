@@ -59,6 +59,4 @@ jobs:
         #   run: docker build -f Dockerfile --check .
 
         - name: Docker Build Verification
-          run: |
-            using: 'docker build --check'
-            image: 'Dockerfile'
+          run: docker build imagehelios:latest .
