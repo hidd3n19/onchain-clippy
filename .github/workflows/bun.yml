@@ -58,7 +58,8 @@ jobs:
         # - name: Build check
         #   run: docker build -f Dockerfile --check .
 
-        # Step 2: List Files
-        - name: List Files
-          run: ls -l
-        
+        - name: List directory
+          run: |
+            echo "Working Directory: $(pwd)"
+            echo "Contents:"
+            ls ../../../
