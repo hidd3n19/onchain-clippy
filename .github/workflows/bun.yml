@@ -59,4 +59,4 @@ jobs:
         #   run: docker build -f Dockerfile --check .
 
         - name: Build Docker image
-          run: docker build helios:latest .
+          run: docker buildx build helios:latest .
