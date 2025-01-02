@@ -58,8 +58,7 @@ jobs:
         # - name: Build check
         #   run: docker build -f Dockerfile --check .
 
-        - name: List directory
+        - name: Docker Build Verification
           run: |
-            echo "Working Directory: $(pwd)"
-            echo "Contents:"
-            ls ../../
+            using: 'docker build --check'
+            image: 'Dockerfile'
