@@ -58,5 +58,5 @@ jobs:
         # - name: Build check
         #   run: docker build -f Dockerfile --check .
 
-        - name: Docker Build Verification
+        - name: Build Docker image
           run: docker build helios:latest .
