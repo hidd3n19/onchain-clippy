@@ -45,3 +45,17 @@ jobs:
       # Step 7: Test
       - name: Test
         run: bun run test
+
+  docker-build:
+      name: Docker Build Verification
+      runs-on: ubuntu-latest
+      steps:
+        # Step 1: Set up Docker Compose
+        - name: Set up Docker
+          uses: docker/setup-buildx-action@v3
+        
+        # Step 2: Verify Helios Service
+        - name: Verify Helios Service
+          run: |
+            docker ps | grep helios || exit 1
+            curl -sf http://localhost:8545/ || exit 1
