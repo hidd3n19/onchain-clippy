@@ -58,5 +58,5 @@ jobs:
         # - name: Build check
         #   run: docker build -f Dockerfile --check .
 
-        - name: List all files
-          run: find . -type f
+        - name: Build check
+          run: docker build -f Dockerfile . --check
