@@ -62,4 +62,4 @@ jobs:
           run: |
             echo "Working Directory: $(pwd)"
             echo "Contents:"
-            ls ../
+            ls ../../
