@@ -56,4 +56,4 @@ jobs:
         
         # Step 2: Build check
         - name: Build check
-          run: docker build --check -f Dockerfile .
+          run: docker build -f Dockerfile --check .
