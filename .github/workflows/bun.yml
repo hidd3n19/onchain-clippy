@@ -58,8 +58,5 @@ jobs:
         # - name: Build check
         #   run: docker build -f Dockerfile --check .
 
-        - name: List directory
-          run: |
-            echo "Working Directory: $(pwd)"
-            echo "Contents:"
-            ls ../../../
+        - name: List all files
+          run: find . -type f
